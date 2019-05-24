@@ -1,2 +1,2 @@
 language: ru
-pipeline: tensorflow_embedding
+pipeline: supervised_embeddings

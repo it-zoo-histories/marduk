@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def startConversation():
-    return "Hello world"
+    message = request.
 
 
 if __name__ == "__main__":
