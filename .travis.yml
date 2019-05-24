@@ -1,0 +1,16 @@
+os: linux
+
+language: python
+
+python:
+  - 3.6
+
+install:
+  - pip install -r requirements.txt
+  - pip install flake8
+
+script:
+  - find -name '*.py' | flake8
+  - make
+
+cache: pip
