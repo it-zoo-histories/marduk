@@ -1,0 +1,152 @@
+intents:
+
+###################### intents ###########################
+# phrases
+- expect_prognoz_weather
+- expect_prognoz_weather_time
+- expect_prognoz_weather_city
+- dailog_deals
+- dialog_news
+- dialog_help
+- dialog_help_help_typw
+- dialog_random_bots
+- dialog_bot_can
+- expect_city_action
+- expect_city_action_type
+- dialog_joke
+- dialog_joke_type
+- dialog_bots_know
+- dialog_bots_know_various
+- dialog_bot_thing
+- dialog_bot_get_shedule
+- dialog_bot_get_shedule_setup_time
+- dialog_bot_help_wanted
+- dialog_corp_question
+- dialog_corp_question_entity
+- dialog_question_affirm
+- dialog_question_deny
+
+# bot_deals
+- bot_deals
+
+# bot_thinging_type
+- bot_thinging_type
+
+# city
+- cities
+- cityAction
+
+
+# common
+- dialog_greet
+- dialog_thanks
+- dialog_please
+- dialog_bye
+
+# corp
+- corp_question_type
+- corp_question_type_soglas
+- corp_question_entity_order
+- corp_question_entity
+
+# deals
+- deals
+
+# equipment
+- quipment_action
+- equip_type
+- equip_type_machin
+- equip_type_computer
+- equip_type_car
+- equip_action_need
+- equip_action_buy
+- equip_action_repair
+
+# help
+- action_help
+- predlog_help
+- help
+- action
+
+# joke
+- joke_action
+- joke_impression
+- joke_type
+
+# news
+- new_fact
+
+# other_ai_bots
+- you_predlog
+- you_know
+- you_type
+- you_various
+
+# question_affirm
+- question_accept
+- question_deny
+
+# randomConvert
+- about_bots
+- action_random
+- what_about
+
+# shedule
+- bot_shedule_type
+- bot_shedule_action
+- time_shedule
+
+# wheater
+- prognoz
+- predlog_place
+- predlog_time
+- time_shedule
+
+#################### intents #################
+##############################################E
+
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_action_on_it
+  - utter_review
+  - utter_thanks
+  - utter_questionNow
+  - utter_thanks_to_user
+  - utter_test_weather
+
+templates:
+  utter_test_weather:
+    - text: "Погода ясная, как будто на пляже"
+    
+  utter_greet:
+    - text: "Добрый день! Чем я могу вам помочь?"
+    - text: "Здравствуйте. Чего желаете?"
+    - text: "Я на связи. Спрашивайте"
+
+  utter_goodbye:
+    - text: "до новых встерч!"
+    - text: "до свидания"
+    - text: "поболтаем позже"
+
+  utter_action_on_it:
+    - text: "правильно ли я распознал ваш вопрос?"
+    - text: "всё верно?"
+
+  utter_review:
+    - text: "пожалуйста, оцените работу помощника"
+    - text: "вам понравилась моя работа?"
+
+  utter_thanks:
+    - text: "всегда рад помочь!"
+    - text: "обращайтесь"
+
+  utter_questionNow:
+    - text: "могу ли я вам ещё чем-нибудь помочь?"
+    - text: "есть ли у вас для меня ещё какие-нибудь задачи?"
+    - text: "время идёт, а я не работаю. Жду ваших задач"
+
+  utter_thanks_to_user:
+    - text: "спасибо за ващ отзыв"
+    - text: "благодарен вам"

@@ -1,0 +1,99 @@
+import ./common.chatito
+import ./deals.chatito
+import ./news.chatito
+import ./randomConvert.chatito
+import ./cityAction.chatito
+import ./shedule.chatito
+import ./bot_thing.chatito
+import ./other_ai_bots.chatito
+import ./joke.chatito
+import ./help.chatito
+import ./bot_deals.chatito
+import ./wheater.chatito
+import ./equipment.chatito
+import ./corp.chatito
+import ./question_affirm.chatito
+
+%[expect_prognoz_weather]('training': '50000', 'testing': '1000')
+    ~[please?] ~[action] ~[prognoz] ~[predlog_time?] @[time?] ~[predlog_place?] @[cities?]
+
+%[expect_prognoz_weather_time]('training': '4')
+    @[time]
+
+%[expect_prognoz_weather_city]('training': '321')
+    @[cities]
+
+%[dialog_deals]('training': '14')
+    ~[deals]
+
+%[dialog_news]('training': '5')
+    @[new_fact]
+
+%[dialog_help]('training': '80', 'testing':'10')
+    ~[please?] ~[help] ~[predlog_help?] @[action_help?]
+
+%[dialog_help_help_type]('training': '3')
+    @[action_help]
+
+%[dialog_random_bots]('training': '6')
+    ~[action_random] @[about_bots]
+
+%[dialog_bot_can]('training': '3')
+    ~[bot_deals]
+
+%[expect_city_action]('training': '1284')
+    @[cities] @[cityAction?]
+
+%[expect_city_action_type]('training': '3')
+    @[cityAction]
+
+%[dialog_joke]('training': '60')
+    ~[joke_action] @[joke_impression] @[joke_type?]
+
+%[dialog_joke_type]('training': '2')
+    @[joke_type]
+
+%[dialog_bots_know]('training': '90')
+    ~[you_type] ~[you_know] ~[you_predlog] @[you_various?]
+
+%[dialog_bots_know_various]('training': '13', 'testing':'1')
+    @[you_various]
+
+%[dialog_bot_thing]('training': '8')
+    ~[bot_thinging_type]
+
+%[dialog_bot_get_shedule]('training': '50')
+    ~[bot_shedule_action] ~[bot_shedule_type] на, @[time_shedule?]
+
+%[dialog_bot_get_shedule_setup_time]('training': '4')
+    @[time_shedule]
+
+%[dialog_bot_help_wanted]('training':'224')
+    @[quipment_action] @[equip_type?]
+
+%[dialog_bot_help_wanted_type]('training':'13', 'testing':'2')
+    @[equip_type]
+
+%[dialog_corp_question]('training':'12')
+    @[corp_question_type] @[corp_question_entity?]
+
+%[dialog_corp_question_entity]('training':'3')
+    @[corp_question_entity]
+
+%[dialog_question_affirm]('training': '13', 'testing': '2')
+    ~[question_accept]
+
+%[dialog_question_deny]('training':'18', 'testing': '2')
+    ~[question_deny]
+
+%[dialog_greet]('training': '10')
+    ~[hi]
+
+%[dialog_thanks]('training': '5')
+    ~[thanks]
+
+%[dialog_please]('training': '4')
+    ~[please]
+
+%[dialog_bye]('training': '32')
+    ~[bye]

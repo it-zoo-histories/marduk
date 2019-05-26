@@ -1,0 +1,15 @@
+@[corp_question_type]
+    ~[corp_question_type_soglas]
+    подписание
+
+~[corp_question_type_soglas]
+    согласование
+    утверждение
+
+@[corp_question_entity]
+    ~[corp_question_entity_order]
+
+~[corp_question_entity_order]
+    договор
+    накладную
+    заявление

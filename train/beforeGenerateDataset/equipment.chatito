@@ -1,0 +1,51 @@
+@[quipment_action]
+    ~[equip_action_need]
+    ~[equip_action_buy]
+    ~[equip_action_repair]
+
+@[equip_type]
+    ~[equip_type_machine]
+    ~[equip_type_computer]
+    ~[equip_type_car]
+
+~[equip_type_machine]
+    станка
+    станок
+    станки
+    рабочий станок
+    инструмент
+
+~[equip_type_computer]
+    компьютер
+    ноутбук
+    монитор
+    мышь
+    клавиатуру
+
+~[equip_type_car]
+    автомобиль
+    грузовик
+    погрузчик
+    перевозчик
+    загрузчик
+
+
+~[equip_action_need]
+    требуется
+    нужно
+    необходимо
+    важно
+
+~[equip_action_buy]
+    требуется покупка
+    нужно купить
+    необходимо покупать
+
+~[equip_action_repair]
+    ремонт
+    ремонтировать
+    отремонтировать
+    починить
+    исправить
+    наладить
+    отладить
